@@ -1,5 +1,6 @@
 import { Backend } from "./Backend"
 import { Frontend } from "./Frontend"
+import "./skills.css"
 
 export const Skills = () => {
   return (
