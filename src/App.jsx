@@ -1,5 +1,5 @@
 import './App.css'
-import { About, Footer, Header, Home, Skills } from './components'
+import { About, Contact, Footer, Header, Home, Skills } from './components'
 
 
 
@@ -12,6 +12,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Contact />
         <Footer />
       </main>
     </>
