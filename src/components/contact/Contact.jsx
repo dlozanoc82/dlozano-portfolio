@@ -73,7 +73,7 @@ export const Contact = () => {
                         />
                     </div>
 
-                    <div className="contact__form-div">
+                    <div className="contact__form-div contact__form-area">
                         <label htmlFor="" className="contact__form-tag">Project</label>
                         <textarea
                             cols="30"
