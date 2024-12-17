@@ -1,28 +1,14 @@
-import { useEffect, useState } from "react"
 import "./scrollup.css"
+import { useScroll } from "../../hooks/useScroll"
 
 
 export const ScrollUp = () => {
 
-    const [showScroll, setShowScroll] = useState(false);
-
-    //Manage event scroll
-    const handleScroll = () => {
-        window.scrollY >= 560 ? setShowScroll(true) : setShowScroll(false);
-    }
-
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
-
-    const onClickScrollUp = () => {
-        window.scrollTo({top: 0, behavior: "smooth"})
-    }
+    const {isScrolled, onClickScrollUp} = useScroll(560);
 
   return (
     <div
-        className={`scrollup ${showScroll ? "show-scroll" : ""} `}
+        className={`scrollup ${isScrolled ? "show-scroll" : ""} `}
         onClick={onClickScrollUp}
     >
         <i className="uil uil-arrow-up scrollup__icon"></i>
