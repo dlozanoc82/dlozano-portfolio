@@ -47,7 +47,7 @@ export const Projects = () => {
 
         </div>
 
-        <div className="work__container grid">
+        <div className="work__container container grid">
             {projects.map((item) => {
                 return <ProjectItems item={item} key={item.id} />
             })}

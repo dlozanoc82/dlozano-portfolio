@@ -1,6 +1,5 @@
 import "./about.css"
 import AboutImg from "../../assets/about.jpg"
-import CV from "../../assets/John-Cv.pdf"
 import { Info } from "./Info"
 
 export const About = () => {
@@ -18,8 +17,8 @@ export const About = () => {
                 Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.
                 </p>
 
-                <a download="" href={CV} className="button button--flex">
-                    Download CV
+                <a href="#contact" className="button button--flex">
+                    Hire Me
                 </a>
             </div>
         </div>
