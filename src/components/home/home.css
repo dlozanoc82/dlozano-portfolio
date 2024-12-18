@@ -31,9 +31,9 @@
 
 .home__subtitle{
     position: relative;
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     padding-left: 5.4rem;
-    font-weight: var(--font-normal);
+    color:  rgb(30, 159, 171);
     margin-bottom: var(--mb-1);
 }
 
@@ -41,10 +41,10 @@
     content: '';
     position: absolute;
     width: 70px;
-    height: 1px;
-    background-color: var(--title-color);
+    height: 1.5px;
+    background-color: rgb(30, 159, 171);
     left: 0;
-    top: 1rem;
+    top: 1.14rem;
 }
 
 .home__description{
