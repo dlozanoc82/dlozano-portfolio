@@ -44,6 +44,15 @@
     margin-bottom: var(--mb-2-5);
 }
 
+.btn-contact{
+    padding: 1rem 1.5rem;
+    gap: 0.5rem;
+}
+
+.btn-contact-icon{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

@@ -8,11 +8,11 @@ export const Data = () => {
         </p>
 
         <a href="#portfolio" className="button button--flex btn-portfolio">
-            Portfolio
+            Portfolio <i className='bx bxs-briefcase-alt-2 button-portfolio-icon'></i>
         </a>
 
-        <a download="" href={CV} className="button button--flex">
-            Download CV
+        <a download="" href={CV} className="button button--flex btn-cv">
+            Download CV  <i className='bx bx-file button-cv-icon'></i>
         </a>
     </div>
   )

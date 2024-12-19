@@ -59,6 +59,21 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
+.btn-portfolio,
+.btn-cv{
+    gap: 0.5rem;
+}
+
+.btn-portfolio:hover{
+    color: rgb(240, 240, 240);
+    background-color: rgb(40, 91, 212);
+}
+
+.button-portfolio-icon,
+.button-cv-icon{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 768px) {
     .header{

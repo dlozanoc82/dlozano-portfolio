@@ -84,8 +84,8 @@ export const Contact = () => {
                         ></textarea>
                     </div>
 
-                    <button className="button button--flex">
-                        Send Message
+                    <button className="button button--flex btn-contact">
+                        Send Message <i className="uil uil-message btn-contact-icon rotate"></i>
                     </button>
 
                 </form>

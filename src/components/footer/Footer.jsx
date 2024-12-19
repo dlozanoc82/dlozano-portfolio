@@ -8,6 +8,9 @@ export const Footer = () => {
 
             <ul className="footer__list">
                 <li>
+                    <a href="#home" className="footer__link">Home</a>
+                </li>
+                <li>
                     <a href="#about" className="footer__link">About</a>
                 </li>
 
@@ -21,18 +24,11 @@ export const Footer = () => {
 
             </ul>
 
-            <div className="footer__social">
-                <a href="https://www.instagram.com/" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-instagram"></i>
-                </a>
-
-                <a href="https://dribbble.com/" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-linkedin"></i>
-                </a>
-
-                <a href="https://github.com/" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-github"></i>
-                </a>
+            <div className="footer-social-icons">
+                <div className="icon"><i className="icon-size uil uil-instagram"></i></div>
+                <div className="icon"><i className="icon-size uil uil-linkedin-alt"></i></div>
+                <div className="icon"><i className="icon-size uil uil-dribbble"></i></div>
+                <div className="icon"><i className="icon-size uil uil-github-alt"></i></div>
             </div>
 
         </div>

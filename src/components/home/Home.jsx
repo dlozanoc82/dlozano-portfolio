@@ -1,5 +1,4 @@
 import { Data } from "./Data"
-import { ScrollDown } from "./ScrollDown";
 import { Social } from "./Social"
 import "./home.css";
 
@@ -14,8 +13,6 @@ export const Home = () => {
 
               <Data />
             </div>
-
-            <ScrollDown />
         </div>
     </section>
   )

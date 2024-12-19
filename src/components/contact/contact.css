@@ -15,7 +15,7 @@
 .contact__info {
     display: grid;
     row-gap: 1rem;
-    grid-template-columns: 300px;
+    grid-template-columns: 400px;
 }
 
 .contact__card{
@@ -65,7 +65,7 @@
 }
 
 .contact__form{
-    width: 360px;
+    width: 460px;
 }
 
 .contact__form-div{
@@ -107,11 +107,25 @@
     resize: none;
 }
 
+.rotate{
+    rotate: -45deg;
+}
+
 /*=============== BREAKPOINTS ===============*/
+
+
 /* For large devices */
 @media screen and (max-width: 992px) {
     .contact__container{
         column-gap: 3rem;
+    }
+
+    .contact__info {
+        grid-template-columns: 300px;
+    }
+
+    .contact__form{
+        width: 360px;
     }
 
 }

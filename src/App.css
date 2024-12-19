@@ -155,12 +155,14 @@ img {
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .button:hover {
-  color: rgba(255, 255, 255, 1) !important;
-  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  /* color: rgba(255, 255, 255, 1) !important; */
+  background-color: rgb(240, 240, 240); /* Blanco */
+  color: rgb(30, 159, 171); /* Cambiar texto */
+  box-shadow: 0 4px 16px rgb(103, 174, 203);
   transition: all 0.2s ease;
 }
 
@@ -175,7 +177,7 @@ img {
 
 .btn-portfolio {
   margin-right: 1rem;
-  background-color: rgb(110, 87, 224);;
+  background-color: rgb(110, 87, 224);
 }
 
 /*=============== BREAKPOINTS ===============*/
