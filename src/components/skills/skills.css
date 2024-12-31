@@ -26,7 +26,7 @@
 
 .skills__group{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     align-items: flex-start;
     row-gap: 1rem;
@@ -34,7 +34,10 @@
 
 .skills__data{
     display: flex;
-    column-gap: 0.5rem;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
 }
 
 .skills .bx-badge-check{
@@ -50,6 +53,12 @@
 
 .skills__level{
     font-size: var(--tiny-font-size);
+}
+
+.icon2{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
 }
 
 /*=============== BREAKPOINTS ===============*/

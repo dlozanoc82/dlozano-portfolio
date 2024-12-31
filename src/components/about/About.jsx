@@ -1,8 +1,12 @@
 import "./about.css"
 import AboutImg from "../../assets/about.jpg"
-import { Info } from "./Info"
+// import { Info } from "./Info"
+import { portfolioData } from "../../data";
 
 export const About = () => {
+
+  const { about } = portfolioData[0]; 
+
   return (
     <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
@@ -12,9 +16,9 @@ export const About = () => {
             <img src={AboutImg} alt="" className="about__img" />
 
             <div className="about__data">
-                <Info />
+                {/* <Info /> */}
                 <p className="about__description">
-                Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.
+                  {about.content}
                 </p>
 
                 <a href="#contact" className="button button--flex btn-contact">
