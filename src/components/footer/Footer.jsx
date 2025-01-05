@@ -25,10 +25,9 @@ export const Footer = () => {
             </ul>
 
             <div className="footer-social-icons">
-                <div className="icon"><i className="icon-size uil uil-instagram"></i></div>
-                <div className="icon"><i className="icon-size uil uil-linkedin-alt"></i></div>
-                <div className="icon"><i className="icon-size uil uil-dribbble"></i></div>
-                <div className="icon"><i className="icon-size uil uil-github-alt"></i></div>
+                <a target='_blank' href="https://x.com/dcoder_js" className="icon"><i className="icon-size uil uil-twitter"></i></a>
+                <a target='_blank' href="www.linkedin.com/in/daniel-lozano-ings" className="icon"><i className="icon-size uil uil-linkedin-alt"></i></a>
+                <a target='_blank' href="https://github.com/dlozanoc82" className="icon"><i className="icon-size uil uil-github-alt"></i></a>
             </div>
 
         </div>

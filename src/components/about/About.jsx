@@ -1,5 +1,5 @@
 import "./about.css"
-import AboutImg from "../../assets/about.jpg"
+import AboutImg from "../../assets/about.jpeg"
 // import { Info } from "./Info"
 import { portfolioData } from "../../data";
 

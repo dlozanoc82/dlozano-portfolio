@@ -14,12 +14,15 @@ export const ProjectItems = ({item}) => {
         </div>
 
         <div className="work__buttons">
-          <a href="#" className="work__button work__button--demo">
+
+          {item.demoUrl && <a href={item.demoUrl} className="work__button work__button--demo" target="_blank">
               Demo <i className="bx bx-play-circle work__button-icon"></i>
-          </a>
-          <a href="#" className="work__button work__button--repo">
+          </a> }
+
+          {item.codeUrl && <a href={item.codeUrl} className="work__button work__button--repo" target="_blank">
               Reposotorio <i className="bx bxl-github work__button-icon"></i>
-          </a>
+          </a>}
+
         </div>
     </div>
   )

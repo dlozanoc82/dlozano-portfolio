@@ -1,6 +1,10 @@
+import { useEmail } from "../../hooks";
 import "./contact.css"
 
 export const Contact = () => {
+
+    const { form, sendEmail } = useEmail();
+
   return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Get in touch</h2>
@@ -15,34 +19,27 @@ export const Contact = () => {
                     <div className="contact__card">
                         <i className="bx bx-mail-send contact__card-icon"></i>
                         <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">dlozanoc862@gmail.com</span>
-
-                        <a href="mailto:examplemail@gmail.com.com" className="contact__button">
-                            Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-                        </a>
-
+                        <form action="mailto:dlozanoc862@gmail.com" method="post" encType="text/plain">
+                            <button type="submit" className="contact__button">
+                                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                            </button>
+                        </form>
                     </div>
 
                     <div className="contact__card">
                         <i className="bx bxl-whatsapp contact__card-icon"></i>
-                        <h3 className="contact__card-title">Whatsapp</h3>
-                        <span className="contact__card-data">+57 315-325-3069</span>
-
-                        <a href="https://api.whatsapp.com/send?phone=3153253069&text=Hello, more information!" className="contact__button">
+                        <h3 className="contact__card-title">WhatsApp</h3>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=573153253069&text=Hello, more information!" className="contact__button">
                             Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
-
                     </div>
 
                     <div className="contact__card">
                         <i className="bx bxl-messenger contact__card-icon"></i>
                         <h3 className="contact__card-title">Messenger</h3>
-                        <span className="contact__card-data">danielalexander.lozanocardoso</span>
-
-                        <a href="https://m.me/danielalexander.lozanocardoso" className="contact__button">
+                        <a target="_blank" href="https://m.me/danielalexander.lozanocardoso" className="contact__button">
                             Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
-
                     </div>
 
                 </div>
@@ -51,15 +48,16 @@ export const Contact = () => {
             <div className="contact__content">
                 <h3 className="contact__title">Write me your project</h3>
 
-                <form action="" className="contact__form">
+                <form ref={form} onSubmit={sendEmail} className="contact__form">
 
                     <div className="contact__form-div">
                         <label htmlFor="" className="contact__form-tag">Name</label>
                         <input
                             type="text"
-                            name="name"
+                            name="user_name"
                             className="contact__form-input"
                             placeholder="Insert your name"
+                            required
                         />
                     </div>
 
@@ -67,9 +65,10 @@ export const Contact = () => {
                         <label htmlFor="" className="contact__form-tag">Mail</label>
                         <input
                             type="email"
-                            name="email"
+                            name="user_email"
                             className="contact__form-input"
                             placeholder="Insert your email"
+                            required
                         />
                     </div>
 
@@ -78,13 +77,14 @@ export const Contact = () => {
                         <textarea
                             cols="30"
                             rows="10"
-                            name="project"
+                            name="message"
                             className="contact__form-input"
                             placeholder="Write your project"
+                            required
                         ></textarea>
                     </div>
 
-                    <button className="button button--flex btn-contact">
+                    <button value="Send" type="submit" className="button button--flex btn-contact">
                         Send Message <i className="uil uil-message btn-contact-icon rotate"></i>
                     </button>
 
