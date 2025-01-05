@@ -1,4 +1,4 @@
-import CV from "../../assets/John-Cv.pdf"
+import CV from "../../assets/Daniel-Cv.pdf"
 import { portfolioData } from "../../data"
 
 export const Data = () => {
