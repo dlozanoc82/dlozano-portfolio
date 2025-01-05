@@ -3,7 +3,6 @@ import littleProject from "../../assets/little-project.png"
 import dashboardProject from "../../assets/dashboard-crm.png"
 import ecommerceProject from "../../assets/ecommerce-muebles.png"
 import planificadorProject from "../../assets/planificador-project.png"
-import Work5 from "../../assets/Work5.jpg"
 import nucleusProject from "../../assets/nucleus-project.png"
 
 export const projectsData = [
