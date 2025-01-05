@@ -26,11 +26,11 @@ export const useEmail = () => {
 
         emailjs
             .sendForm(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                import.meta.env.VITE_EMAILJS_SERVICE_ID, // Accede a las variables de entorno con import.meta.env
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 form.current,
                 {
-                    publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+                    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
                 }
             )
             .then(
