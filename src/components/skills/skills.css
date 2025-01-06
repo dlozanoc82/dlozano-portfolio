@@ -9,6 +9,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills__title{
@@ -74,6 +75,10 @@
 @media screen and (max-width: 576px) {
     .skills__container{
         grid-template-columns: 1fr;
+    }
+
+    .skills__group{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skills__content{

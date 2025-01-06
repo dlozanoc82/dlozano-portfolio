@@ -138,6 +138,13 @@
 
 }
 
+@media screen and (max-width: 450px) {
+    .btn-portfolio,
+    .btn-cv{
+      gap: 0.3rem;
+    }
+  }
+
 @media screen and (max-width: 350px) {
     .nav__menu{
         padding: 2rem 0.25rem 4rem;
